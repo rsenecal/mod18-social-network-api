@@ -18,7 +18,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/rsenecal/mod18-social-network-api">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="https://user-images.githubusercontent.com/50510/203691181-e38f791a-0448-47e1-b6ae-fb3398fe7ac7.png" alt="Logo" width="80" height="80">  
   </a>
 
 <!-- Project Name -->
