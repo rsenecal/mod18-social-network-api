@@ -1,7 +1,7 @@
-const mongoose = require('mongoose');
+// const mongoose = require('mongoose');
+const { Schema, model } = require("mongoose");
 
-
-const UserSchema = new mongoose.Schema({
+const UserSchema = new Schema({
     username: { 
         type: String, 
         required:true, 
@@ -48,7 +48,7 @@ UserSchema.virtual('friendCount').get(function (){
     return this.friends.length
 })
 
-const User = mongoose.model('User', UserSchema);
-const handeleError = (err) => console.error(err);
+const User = model('User', UserSchema);
+// const handeleError = (err) => console.error(err);
 
 module.exports = User;
