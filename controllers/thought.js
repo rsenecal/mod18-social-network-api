@@ -50,7 +50,7 @@ const thought = {
             })
             .then((dbUserData) => {
                 if(!dbUserData) {
-                    return res.status(404).json({ message: "No thought, however we found no user with this id" });
+                    return res.status(404).json({ message: "thought NOT craeted, we found no user with this id" });
                 }
                 res.json({message: "Thought Create successfully"});
             })
