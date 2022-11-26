@@ -71,7 +71,15 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+### Product Name Screen Shot
+<img width="1731" alt="MOD18-Screen" src="https://user-images.githubusercontent.com/50510/204109142-85877ceb-c613-40f6-8bef-7125eb64776b.png">
+
+
+
+## WalkThrough Video:
+
+
+https://user-images.githubusercontent.com/50510/204109678-6e0c7a57-1865-412f-a282-d869f4e761a9.mp4
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
