@@ -4,7 +4,7 @@ const { Schema, model, Types } = require('mongoose');
 const ReactionSchema = new Schema({
     reactionid: { 
         type: Schema.Types.ObjectId,
-        default: () =>  new mongoose.Types.ObjectId(),
+        default: () =>  new Types.ObjectId(),
     
     },
     reactionBody: 
@@ -36,7 +36,7 @@ const ReactionSchema = new Schema({
 }
 );
 
-constThoughtSchema = new Schema(
+const ThoughtSchema = new Schema(
     {
         thoughtText: 
         {
@@ -69,18 +69,13 @@ constThoughtSchema = new Schema(
     }
 );
 
-// userSchema.path('email').validate(async (email) => {
-//     const emailCount = await mongoose.models.User.countDocuments({ email})
-//     return !emailCount
-// }, 'Email is not Valid'
 
-// )
 
-UserSchema.virtual('reactionCount').get(function (){
-    return this.friends.length
-})
+ThoughtSchema.virtual('reactionCount').get(function (){
+    return this.reactions.length
+});
 
-const User = mongoose.model('Thought', ThoughtSchema);
-const handeleError = (err) => console.error(err);
+const Thought = model('Thought', ThoughtSchema);
+// const handeleError = (err) => console.error(err);
 
 module.exports = Thought;
